@@ -8,8 +8,3 @@
 4. Tapiwa Tryemba
 
 ---
-
-##Project hierachy and structure:
-
-1. Website systemm:
-1.1 
