@@ -1,4 +1,4 @@
-# FySpotSystems
+# TBS (Table Booking Service)
 
 ##Team Development Project
 ###Members:
