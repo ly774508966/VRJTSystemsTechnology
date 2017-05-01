@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 14
+VisualStudioVersion = 14.0.25420.1
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socialite", "Socialite\Socialite.csproj", "{5F8F2BE0-4218-456F-B262-4B9514CB7438}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Socialite.Tests", "Socialite.Tests\Socialite.Tests.csproj", "{2FE76F50-883A-4C28-88E7-735179F7F05F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{5F8F2BE0-4218-456F-B262-4B9514CB7438}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5F8F2BE0-4218-456F-B262-4B9514CB7438}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5F8F2BE0-4218-456F-B262-4B9514CB7438}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5F8F2BE0-4218-456F-B262-4B9514CB7438}.Release|Any CPU.Build.0 = Release|Any CPU
+		{2FE76F50-883A-4C28-88E7-735179F7F05F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{2FE76F50-883A-4C28-88E7-735179F7F05F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{2FE76F50-883A-4C28-88E7-735179F7F05F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{2FE76F50-883A-4C28-88E7-735179F7F05F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
