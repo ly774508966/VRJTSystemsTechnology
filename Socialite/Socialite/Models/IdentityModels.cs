@@ -3,6 +3,7 @@ using System.Security.Claims;
 using System.Threading.Tasks;
 using Microsoft.AspNet.Identity;
 using Microsoft.AspNet.Identity.EntityFramework;
+using System.Data.Entity.ModelConfiguration.Conventions;
 
 namespace Socialite.Models
 {
@@ -30,4 +31,35 @@ namespace Socialite.Models
             return new ApplicationDbContext();
         }
     }
+
+    public class CommentDbContext : DbContext
+    {
+
+        public CommentDbContext()
+        : base("CommentConnection")
+        {
+        }
+
+        public static CommentDbContext Create()
+        {
+            return new CommentDbContext();
+        }
+
+        public DbSet<Post> Post { get; set; }
+        public DbSet<Comment> Comments { get; set; }
+        public DbSet<Reply> Replies { get; set; }
+        public DbSet<Tag> Tags { get; set; }
+        public DbSet<PostTag> PostTags { get; set; }
+        public DbSet<PostCategory> PostCategories { get; set; }
+        public DbSet<Category> Categories { get; set; }
+        public DbSet<PostVideo> PostVideos { get; set; }
+        public DbSet<PostLike> PostLikes { get; set; }
+        public DbSet<CommentLike> CommentLikes { get; set; }
+        public DbSet<ReplyLike> ReplyLikes { get; set; }
+        protected override void OnModelCreating(DbModelBuilder modelBuilder)
+        {
+            modelBuilder.Conventions.Remove<PluralizingTableNameConvention>();
+        }
+    }
+
 }
